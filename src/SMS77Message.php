@@ -92,7 +92,31 @@ class SMS77Message
 
         return $this;
     }
+    
+    /**
+     * Set label.
+     *
+     * @param string $label
+     */
+    public function label(string $label): self
+    {
+        $this->payload['label'] = $label;
 
+        return $this;
+    }
+
+    /**
+     * Set foreign id.
+     *
+     * @param string $foreignId
+     */
+    public function foreignId(string $foreignId): self
+    {
+        $this->payload['foreign_id'] = $foreignId;
+
+        return $this;
+    }
+    
     /**
      * Set notification delay.
      *
